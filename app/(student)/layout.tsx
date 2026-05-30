@@ -1,7 +1,9 @@
+import { StudentShell } from '@/components/layout/StudentShell'
+
 export default function StudentLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen" style={{ background: 'var(--bg-base)' }}>
+    <StudentShell userFullName="Aluno Teste" userEmail="aluno@exemplo.com">
       {children}
-    </div>
+    </StudentShell>
   )
 }
