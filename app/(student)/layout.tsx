@@ -20,8 +20,11 @@ export default async function StudentLayout({
 
   return (
     <StudentShell
+      // @ts-expect-error -- profiles table created in Phase 4
       userFullName={profile?.full_name ?? user.email ?? 'Aluno'}
+      // @ts-expect-error -- profiles table created in Phase 4
       userEmail={profile?.email ?? user.email ?? ''}
+      // @ts-expect-error -- profiles table created in Phase 4
       userAvatarUrl={profile?.avatar_url ?? undefined}
     >
       {children}
